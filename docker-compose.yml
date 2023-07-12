@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+  db:
+    container_name: db
+    image: mysql:latest
+    command: 
+      --default-authentication-plugin=mysql_native_password
+    restart: always
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./dados:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: Nx-74205
+      MYSQL_DATABASE: things
+      MYSQL_USER: things
+      MYSQL_PASSWORD: Nx-74205
+    networks:
+      - things
+
+networks:
+  things:
+    driver: bridge
