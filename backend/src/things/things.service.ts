@@ -6,20 +6,14 @@ import { PrismaService } from 'src/common/prisma/prisma.service';
 export class ThingsService {
   constructor(private readonly prisma: PrismaService) {}
 
-  create(_createThingDto: Prisma.ThingCreateInput) {
+  create(createThingDto: Prisma.ThingCreateInput) {
     return this.prisma.thing.create({
       data: createThingDto,
-    })
+    });
   }
 
   findAll() {
     return this.prisma.thing.findMany({
-      select: {
-        id: true,
-        title: true,
-        image: true,
-        category: true,
-      },
       include: {
         category: true,
       },

@@ -1,0 +1,18 @@
+ 1938  source ~/.nvm/nvm.sh\n
+ 1940  nvm install-latest-npm
+ 1941  nvm ls
+ 1942  nvm install node
+ 1943  nvm ls
+ 1944  npm -v
+ 1957  nest new backend
+ 1958  cd backend
+ 1961  flutter create things_stuffs
+ 1962  flutter upgrade
+ 1971  npm run start:dev
+ 1991  nest g resource things
+ 2093  npm install prisma --save-dev
+ 2095  npx prisma init
+ 2096  nest g resource categories
+ 2098  npx prisma generate 
+ 2100  npx prisma db push
+ 2101  npx prima studio

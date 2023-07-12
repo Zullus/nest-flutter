@@ -1,6 +1,23 @@
 version: '3.7'
 
 services:
+  backend:
+    build:
+      dockerfile: Dockerfile
+      context: .
+      target: development
+    volumes:
+      - ./backend:/usr/src/app
+    env_file:
+    - .env
+    # Run a command against the development stage of the image
+    command: npm run start:dev
+    ports:
+      - 3000:3000
+    networks:
+      - things
+    depends_on:
+      - db
   db:
     container_name: db
     image: mysql:latest

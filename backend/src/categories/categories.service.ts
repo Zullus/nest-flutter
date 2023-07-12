@@ -6,7 +6,7 @@ import { PrismaService } from 'src/common/prisma/prisma.service';
 export class CategoriesService {
   constructor(private readonly prisma: PrismaService) {}
 
-  create(_createCategoryDto: Prisma.CategoryCreateInput) {
+  create(createCategoryDto: Prisma.CategoryCreateInput) {
     return this.prisma.category.create({
       data: createCategoryDto,
     });
