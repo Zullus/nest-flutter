@@ -16,3 +16,7 @@
  2098  npx prisma generate 
  2100  npx prisma db push
  2101  npx prima studio
+
+nest g module auth
+nest g service auth/firebase
+npm install --save firebase-admin

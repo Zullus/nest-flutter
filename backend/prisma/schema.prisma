@@ -2,31 +2,31 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "prisma-client-js"
+  provider      = "prisma-client-js"
   binaryTargets = ["native", "linux-musl-openssl-3.0.x"]
 }
 
-//datasource db {
-//  provider = "mysql"
-//  url      = env("DATABASE_URL")
-//}
-
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
+  provider = "mysql"
+  url      = "mysql://things:Nx-74205@db:3306/things" // env("DATABASE_URL")
 }
 
-model Category{
-  id Int @id @default(autoincrement())
-  title String
+//datasource db {
+//  provider = "sqlite"
+//  url      = "file:./dev.db"
+//}
+
+model Category {
+  id     Int     @id @default(autoincrement())
+  title  String
   things Thing[]
 }
 
-model Thing{
-  id Int @id @default(autoincrement())
-  title String
-  image String?
-  approximateValue Decimal @default(0.0)
-  categoryId Int
-  category Category @relation(fields: [categoryId], references: [id])
+model Thing {
+  id               Int      @id @default(autoincrement())
+  title            String
+  image            String?
+  approximateValue Decimal  @default(0.0)
+  categoryId       Int
+  category         Category @relation(fields: [categoryId], references: [id])
 }
