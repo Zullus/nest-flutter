@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "887045923890",
+    "project_id": "things-stuffs-1327e",
+    "storage_bucket": "things-stuffs-1327e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887045923890:android:b0be19b7ac5f797143482b",
+        "android_client_info": {
+          "package_name": "com.example.things_stuffs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887045923890-pesgo9l67nq196h99ms74nf528113m70.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpdozZ4JhZsH-8iIY3VQvSqw50r2uQdQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887045923890-pesgo9l67nq196h99ms74nf528113m70.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

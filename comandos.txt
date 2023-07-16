@@ -20,3 +20,18 @@
 nest g module auth
 nest g service auth/firebase
 npm install --save firebase-admin
+
+
+
+Front 
+
+flutter pub add flutter_modular
+flutter pub add uno
+flutter pub add asp
+flutter pub add firebase_core
+flutter pub add firebase_auth
+
+dart pub global activate flutterfire_cli
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+flutterfire configure --project=things-stuffs-1327e
+
